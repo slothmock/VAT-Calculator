@@ -40,9 +40,9 @@ class Window:
         self.vatRateLabel.grid(row=4, column=0, sticky=W)
         self.vatRateButton = Button(self.window, text="20%", command=self.vatRate20)
         self.vatRateButton.grid(row=5, column=2, sticky=W)
-        self.vatRateButton = Button(self.window, text="10%", command=self.vatRate10)
+        self.vatRateButton = Button(self.window, text="12.5%", command=self.vatRate125)
         self.vatRateButton.grid(row=5, column=3, sticky=W)
-        self.vatRateButton = Button(self.window, text="0%", command=self.vatRate0)
+        self.vatRateButton = Button(self.window, text="5%", command=self.vatRate5)
         self.vatRateButton.grid(row=5, column=4, sticky=E)
 
         # create a result label
@@ -59,13 +59,13 @@ class Window:
         self.calculate()
 
 
-    def vatRate10(self):
-        self.vatRate = 0.1
+    def vatRate125(self):
+        self.vatRate = 0.125
         self.calculate()
 
 
-    def vatRate0(self):
-        self.vatRate = 0
+    def vatRate5(self):
+        self.vatRate = 0.05
         self.calculate()
 
 

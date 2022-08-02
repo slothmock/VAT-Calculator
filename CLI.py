@@ -17,7 +17,7 @@ while True:
     try:
         quantity = int(input("Enter the quantity of the item(s): "))
         price = float(input("Enter the price of the item(s): "))
-        vatRate = int(input("Enter the VAT rate: "))
+        vatRate = float(input("Enter the VAT rate: "))
     except ValueError as err:
         print(f"Invalid input. {err} Try again.\n")
         continue
